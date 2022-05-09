@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 16px;
+}
+html {
+  background-image: url("/images/bg-intro-mobile.png");
+  background-color: hsl(0, 100%, 74%);
+}
+.contenedor {
+  margin: 0 auto;
+  width: 80%;
+}
+h1 {
+  text-align: center;
+  padding-top: 3em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+.texto {
+  text-align: center;
+}
+.formulario {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(12, 12, 12, 0.527) 0px 10px 10px 5px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2em;
+  padding-right: 2em;
+  margin-left: 2em;
+}
+input {
+  padding: 1em;
+  font-weight: bold;
+  border: 1px hsl(246, 25%, 77%) solid;
+  border-radius: 3px;
+}
+input.cError {
+  background-image: url(/images/icon-error.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-position-x: 95%;
+  color: hsl(0, 100%, 74%);
+}
+.alertas {
+  opacity: 0;
+}
+.alertas.cError {
+  opacity: 1;
+  padding-bottom: 1em;
+}
+.tex {
+  font-size: 12px;
+  color: hsl(246, 25%, 77%);
+  padding-left: 3em;
+  padding-right: 3em;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.tex a {
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+  font-weight: 800;
+}
+.alertas {
+  color: hsl(0, 100%, 74%);
+  font-style: italic;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: right;
+}
+.textoB {
+  background-color: hsl(248, 32%, 49%);
+  padding: 1em 3em 1em 3em;
+  border-radius: 10px;
+  margin-top: 3em;
+  margin-bottom: 2em;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: rgba(12, 12, 12, 0.527) 0px 10px 10px 5px;
+}
+.terminos .boton {
+  background-color: hsl(154, 59%, 51%);
+  padding: 1em 2em 1em 2em;
+  border-radius: 10px;
+  margin: 2em;
+  text-align: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: hsl(154, 66%, 40%) 0px -5px 6px 3px inset;
+}
+.negrita {
+  font-weight: bold;
+}
+@media (min-width: 850px) {
+  html,
+  body {
+    display: flex;
+    background-image: url("/images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+  article {
+    width: 40%;
+  }
+  aside {
+    width: 50%;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+  h1 {
+    font-size: 3em;
+    text-align: left;
+    padding-top: 0;
+    padding-left: 0em;
+    padding-right: 0em;
+    line-height: 1.2em;
+  }
+  .texto {
+    text-align: left;
+    padding-top: 0;
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+}
